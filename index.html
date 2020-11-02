@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- <html lang="es" oncontextmenu="return false;"> -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maverick Champi</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onkeydown="return false;" onmousedown="return false;">
+    <div class="burger-button" id="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header-title">
+          <p>PORTAFOLIO.</p>
+        </div>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#sobremi">Sobre mi</a>
+            </li>
+            <li>
+              <a class="link" href="#proyectos">Proyectos</a>
+            </li>
+            <li>
+              <a class="link" href="#habilidades">Habilidades</a>
+            </li>
+            <li>
+              <a class="link" href="#contacto">Contacto</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+
+      </div>
+    </section>
+    <section class="about" id="sobremi"></section>
+    <section class="projects" id="proyectos"></section>
+    <section class="skills" id="habilidades"></section>
+    <footer class="contact" id="contacto"></footer>
+ 
+    <script
+      src="https://kit.fontawesome.com/905fa6d085.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const menu = document.querySelector(".menu");
+      const burgerbutt = document.querySelector(".burger-button");
+      const burgerButton = document.querySelector("#burger-menu");
+      const ipad = window.matchMedia("(max-width: 767px)");
+      runBurgerMenu(ipad.matches);
+      ipad.addListener((event) => {
+        runBurgerMenu(event.matches);
+      });
+
+      burgerButton.addEventListener("click", hideShow);
+      function hideShow() {
+        if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+          burgerbutt.classList.remove("is-active");
+        } else {
+          menu.classList.add("is-active");
+          burgerbutt.classList.add("is-active");
+        }
+      }
+      function runBurgerMenu(yes) {
+        if (yes) {
+          burgerButton.addEventListener("click", hideShow);
+        } else {
+          burgerButton.removeEventListener("click", hideShow);
+        }
+      }
+    </script>
+  </body>
+</html>
