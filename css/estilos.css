@@ -115,10 +115,10 @@ h1 strong {
   font-weight: 700;
 }
 h1 span{
-  font-size: .7em;
+  font-size: .8em;
   font-weight: 700;
   color: black;
-  background-color: yellow;
+  background-color: yellow !important;
   padding: 2.5%;
   border-radius: 5px;
 }
