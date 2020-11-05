@@ -15,7 +15,7 @@
     <div class="burger-button" id="burger-menu">
       <i class="fas fa-bars"></i>
     </div>
-    <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <div class="header-title">
           <p>PORTAFOLIO.</p>
@@ -23,16 +23,16 @@
         <nav class="menu">
           <ol>
             <li>
-              <a class="link" href="#sobremi">Sobre mi</a>
+              <a class="link" href="#home">Home</a>
             </li>
             <li>
-              <a class="link" href="#proyectos">Proyectos</a>
+              <a class="link1" href="#sobremi">Sobre mi</a>
             </li>
             <li>
-              <a class="link" href="#habilidades">Habilidades</a>
+              <a class="link2" href="#proyectos">Proyectos</a>
             </li>
             <li>
-              <a class="link" href="#contacto">Contacto</a>
+              <a class="link3" href="#contacto">Contacto</a>
             </li>
           </ol>
         </nav>
@@ -41,11 +41,10 @@
     <section class="hero">
       <div class="container">
         <div class="hero-title">
-          <h1>MI NOMBRE ES<br/>
-            <strong translate="no">MAVERICK CHAMPI</strong> <br>
-            <span style="
-            color: black !important;
-            background-color: yellow !important;">SOY DESARROLLADOR FRONTED</span>
+          <h1>
+            MI NOMBRE ES<br />
+            <strong translate="no">MAVERICK CHAMPI</strong> <br />
+            <span>SOY DESARROLLADOR FRONTED</span>
           </h1>
         </div>
         <div class="hero-image">
@@ -55,14 +54,26 @@
     </section>
     <section class="about" id="sobremi">
       <div class="container">
-        <h2>
-          Sobre mi, Mave
-        </h2>
-
+        <figure class="about-image">
+          <img src="images/foto2.png" alt="Foto sobre mi" />
+        </figure>
+        <div class="about-description">
+          <h2>SOBRE MI</h2>
+          <p>
+            Soy Maverick Champi y me desempeño como Desarrollador
+            Fronted. Estudiante de la carrera de Computación e Informática en el
+            Instituto Superior Cibertec. Tengo 19 años y soy un apasionado a la tecnología.
+          </p>
+          <p>
+            Me fascina el área de desarrollo web, pero además me gusta
+            practicar atletismo, leer y ver memes, así logró tener mejor
+            desempeño en mis proyectos de los cuales estoy orgulloso. Siempre con ganas de aprender y superar a mi mismo.
+          </p>
+        </div>
       </div>
     </section>
-    <section class="projects" id="proyectos"></section>
     <section class="skills" id="habilidades"></section>
+    <section class="projects" id="proyectos"></section>
     <footer class="contact" id="contacto"></footer>
 
     <script
@@ -79,7 +90,12 @@
         runBurgerMenu(event.matches);
       });
 
+      document.querySelector(".link").addEventListener("click", hideShow);
+      document.querySelector(".link1").addEventListener("click", hideShow);
+      document.querySelector(".link2").addEventListener("click", hideShow);
+      document.querySelector(".link3").addEventListener("click", hideShow);
       burgerButton.addEventListener("click", hideShow);
+
       function hideShow() {
         if (menu.classList.contains("is-active")) {
           menu.classList.remove("is-active");
