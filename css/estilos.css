@@ -9,7 +9,7 @@ body {
   font-family: var(--font-primary);
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
 }
 .burger-button {
@@ -165,6 +165,54 @@ h1 span {
   flex-wrap: wrap;
   align-items: center;
 }
+.skills{
+  background-color: rgb(245,245, 245);
+}
+.skills-title{
+  display: flex;
+  justify-content: center;
+}
+.skills-title h2{
+  margin: 3% 0;
+  font-size: 25px;
+  width: auto;
+  background: linear-gradient(
+    to bottom,
+    transparent 60%,
+    yellow 40%
+  );
+}
+.skill-box-master{  
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.skill-box{
+  margin-bottom : 6%;
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-secondary);
+}
+.skill-box span{
+  font-weight: normal;
+}
+.skills h3{
+  text-align: center;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.skill-box i{
+  font-size: 28px;
+  white-space: nowrap;
+}
+.skill-box picture{
+  text-align: center;
+}
+.skill-box img{
+  width: 100px;
+}
 .projects-title {
   display: flex;
   justify-content: center;
@@ -192,11 +240,11 @@ h1 span {
   width: 30%;
   position: relative;
 }
-.projects-details img{
+.projects-details img {
   width: 100%;
   height: 100%;
 }
-.projects-details p{
+.projects-details p {
   color: black;
   position: absolute;
   width: 100%;
@@ -208,20 +256,20 @@ h1 span {
   top: 0;
   bottom: 0;
 }
-.projects-details p img{
+.projects-details p img {
   width: 30px;
   height: auto;
 }
-.projects-details:hover{
+.projects-details:hover {
   background-color: yellow;
 }
-.projects-details:hover > img{
+.projects-details:hover > img {
   opacity: 0.3;
 }
-.projects-details:hover > p{
+.projects-details:hover > p {
   display: flex;
 }
-.contact{
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,16 +280,16 @@ h1 span {
   font-weight: 400;
   font-size: 20px;
 }
-.contact-title{
+.contact-title {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
 }
-.contact .container{
+.contact .container {
   width: 100%;
 }
-.contact h3{
+.contact h3 {
   width: 80%;
   margin-top: 25px;
   margin-bottom: 2px;
@@ -251,32 +299,29 @@ h1 span {
   text-align: left;
   background-color: yellow;
 }
-.contact h2{
+.contact h2 {
   margin-top: 2px;
 }
-.contact-description{
+.contact-description {
   width: 100%;
   margin: 40px 0;
   display: flex;
   justify-content: space-evenly;
 }
-.contact-description span{
+.contact-description span {
   font-size: 20px;
   font-family: var(--font-secondary);
 }
-.contact-red_social{
+.contact-red_social {
   font-size: 35px;
   margin: 10px 0;
 }
-.contact-red_social a{
+.contact-red_social a {
   color: white;
 }
-.footer{
+.footer {
   margin: 15px 0;
 }
-
-
-
 
 @media screen and (max-width: 1143px) {
   h1 {
@@ -360,7 +405,7 @@ h1 span {
   }
   .about-description {
     order: 1;
-    font-size: 10px;
+    font-size: 15px;
   }
   .about-image {
     margin-top: 0;
@@ -368,36 +413,46 @@ h1 span {
   .about-image img {
     width: 90%;
   }
-  .projects-details {
-    width: 45%; 
-  }
-  .projects-title h2{
+  .skills-title h2{
     font-size: 19px;
   }
-  .contact-description{
+  .skills h3{
+    font-size: 18px;
+  }
+  .skill-box i{
+    font-size: 20px;
+  }
+  
+  .projects-details {
+    width: 45%;
+  }
+  .projects-title h2 {
+    font-size: 19px;
+  }
+  .contact-description {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
     margin-bottom: 20px;
   }
-  .contact-description i{
+  .contact-description i {
     font-size: 15px;
     margin-top: 20px;
   }
-  .contact-description span{
+  .contact-description span {
     font-size: 15px;
   }
-  .contact h2{
+  .contact h2 {
     font-size: 19px;
   }
-  .contact h3{
+  .contact h3 {
     font-size: 10px;
     padding: 3px;
   }
-  .footer{
+  .footer {
     font-size: 15px;
   }
-  .contact-red_social{
+  .contact-red_social {
     font-size: 25px;
     margin: 0;
   }
@@ -421,6 +476,12 @@ h1 span {
   }
   .about-image {
     width: 50%;
+  }
+  .skill-box-master{
+    justify-content: center;
+  }
+  .skill-box{
+    width: 55%;
   }
 }
 @media screen and (max-width: 480px) {
