@@ -91,7 +91,6 @@ ol {
   background: linear-gradient(to right, var(--color-primary) 50%, #eceaea 50%);
   color: #fff;
   display: flex;
-  /* height: 500px; */
 }
 .hero-title {
   width: 30%;
@@ -205,6 +204,7 @@ h1 span {
 }
 .skill-box i{
   font-size: 28px;
+  margin: 2% 0;
   white-space: nowrap;
 }
 .skill-box picture{
@@ -226,8 +226,10 @@ h1 span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .projects-items {
+  margin: auto;
   width: 70%;
   height: auto;
   display: flex;
@@ -478,10 +480,11 @@ h1 span {
     width: 50%;
   }
   .skill-box-master{
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .skill-box{
-    width: 55%;
+    width: 35%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -495,6 +498,9 @@ h1 span {
 @media screen and (max-width: 394px) {
   h1 {
     font-size: 0.8em;
+  }
+  .skills h3{
+    white-space: initial;
   }
 }
 @media screen and (max-width: 320px) {
