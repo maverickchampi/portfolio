@@ -288,7 +288,7 @@ h1 span {
   background-color: yellow;
 }
 .projects-details:hover > img {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .projects-details:hover > p {
   display: flex;
