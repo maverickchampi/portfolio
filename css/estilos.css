@@ -73,13 +73,13 @@ a {
   font-size: 16px;
 }
 .header-title {
-  width: 30%;
+  width: 35%;
   font-size: 25px;
 }
 .menu {
   background-color: var(--color-secondary);
   height: inherit;
-  width: 70%;
+  width: 65%;
 }
 ol {
   margin: 0;
@@ -93,19 +93,22 @@ ol {
   display: flex;
 }
 .hero-title {
-  width: 30%;
+  width: 35%;
   display: inherit;
   align-items: center;
+  background-image: url(../images/animation1.png);
+  background-repeat: no-repeat;
+  background-position: 0 2%;
+  background-size: 70%;
 }
 h1 {
   font-family: var(--font-secondary);
   font-weight: 400;
   font-size: 3em;
-  line-height: 1.5;
-  letter-spacing: -0.2px;
+  line-height: 1.4;
   color: #fff;
   position: absolute;
-  margin: -2em 0 0 1em;
+  margin: .2em 0 0 1em;
   z-index: 2;
 }
 h1 strong {
@@ -121,7 +124,7 @@ h1 span {
   border-radius: 5px;
 }
 .hero-image {
-  width: 70%;
+  width: 65%;
   background: #ccc;
   overflow: hidden;
 }
@@ -146,23 +149,34 @@ h1 span {
   margin-top: 4%;
 }
 .about-image {
-  margin: 4% 0;
+  margin: 5% 0;
   width: 30%;
   display: inherit;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
-.about-image img {
+.about-photo{
   width: 90%;
+  height: auto;
+}
+.about-animation{
+  margin-top: 5%;
+  width: 50%;
   height: auto;
 }
 .about-description {
   width: 70%;
+  padding: 3%;
+  height: auto;
   font-size: 20px;
   display: inherit;
-  margin: 2%;
+  margin: 5%;
   flex-wrap: wrap;
-  align-items: center;
+  background-image: url(../images/animation3.png);
+  background-repeat: no-repeat;
+  background-position: top 10% right 10%;
+  background-size: 30%;
 }
 .skills{
   background-color: rgb(245,245, 245);
@@ -170,9 +184,13 @@ h1 span {
 .skills-title{
   display: flex;
   justify-content: center;
+  background-image: url(../images/animation4.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 18%;
 }
 .skills-title h2{
-  margin: 3% 0;
+  margin: 40px 0;
   font-size: 25px;
   width: auto;
   background: linear-gradient(
@@ -216,6 +234,10 @@ h1 span {
 .projects-title {
   display: flex;
   justify-content: center;
+  background-image: url(../images/animation4.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 18%;
 }
 .projects-title h2 {
   margin: 50px 0;
@@ -334,6 +356,9 @@ h1 span {
   h1 {
     font-size: 2.3em;
   }
+  .about-description {
+    background-position: top 7% right 5%;
+  }
 }
 @media screen and (max-width: 895px) {
   h1 {
@@ -341,6 +366,12 @@ h1 span {
   }
   .projects-details {
     width: 45%;
+  }
+  .skills-title{
+    background-size: 22%;
+  }
+  .projects-title{
+    background-size: 22%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -401,6 +432,7 @@ h1 span {
   }
   .about-image {
     order: 2;
+    margin-bottom: 10%;
   }
   .about h2 {
     font-size: 19px;
@@ -408,11 +440,19 @@ h1 span {
   .about-description {
     order: 1;
     font-size: 15px;
+    padding: 2%;
+    background-position: top 8% right 5%;
+    background-size: 25%;
+  }
+  .about-animation{
+    width: 50%;
+    height: auto;
   }
   .about-image {
     margin-top: 0;
+    width: 35%;
   }
-  .about-image img {
+  .about-photo{
     width: 90%;
   }
   .skills-title h2{
@@ -424,7 +464,12 @@ h1 span {
   .skill-box i{
     font-size: 20px;
   }
-  
+  .skills-title{
+    background-size: 25%;
+  }
+  .projects-title{
+    background-size: 25%;
+  }
   .projects-details {
     width: 45%;
   }
@@ -468,6 +513,10 @@ h1 span {
   h1 {
     font-size: 1.4em;
   }
+  .about-description {
+    background-position: top 4% right 5%;
+    background-size: 35%;
+  }
 }
 @media screen and (max-width: 554px) {
   h1 {
@@ -493,6 +542,9 @@ h1 span {
   }
   .projects-items {
     justify-content: center;
+  }
+  .about-description {
+    background-size: 35%;
   }
 }
 @media screen and (max-width: 394px) {
