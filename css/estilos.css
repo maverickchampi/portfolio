@@ -149,7 +149,7 @@ h1 span {
   margin-top: 4%;
 }
 .about-image {
-  margin: 5% 0;
+  margin: 3%;
   width: 30%;
   display: inherit;
   justify-content: center;
@@ -157,7 +157,7 @@ h1 span {
   flex-direction: column;
 }
 .about-photo{
-  width: 90%;
+  width: 235px;
   height: auto;
 }
 .about-animation{
@@ -171,12 +171,12 @@ h1 span {
   height: auto;
   font-size: 20px;
   display: inherit;
-  margin: 5%;
+  margin: 3%;
   flex-wrap: wrap;
   background-image: url(../images/animation3.png);
   background-repeat: no-repeat;
   background-position: top 10% right 10%;
-  background-size: 30%;
+  background-size: 25%;
 }
 .skills{
   background-color: rgb(245,245, 245);
@@ -357,7 +357,7 @@ h1 span {
     font-size: 2.3em;
   }
   .about-description {
-    background-position: top 7% right 5%;
+    background-position: top 10% right 7%;
   }
 }
 @media screen and (max-width: 895px) {
@@ -432,7 +432,12 @@ h1 span {
   }
   .about-image {
     order: 2;
-    margin-bottom: 10%;
+    margin: 0 auto 5%;
+    width: 35%;
+    align-items: center;
+  }
+  .about-photo{
+    width: 175px;
   }
   .about h2 {
     font-size: 19px;
@@ -440,20 +445,15 @@ h1 span {
   .about-description {
     order: 1;
     font-size: 15px;
-    padding: 2%;
-    background-position: top 8% right 5%;
+    margin-top: 5%;
+    padding: 0;
+    background-position: top 5% right;
     background-size: 25%;
   }
   .about-animation{
     width: 50%;
     height: auto;
-  }
-  .about-image {
-    margin-top: 0;
-    width: 35%;
-  }
-  .about-photo{
-    width: 90%;
+    align-self: flex-end;
   }
   .skills-title h2{
     font-size: 19px;
@@ -514,8 +514,8 @@ h1 span {
     font-size: 1.4em;
   }
   .about-description {
-    background-position: top 4% right 5%;
-    background-size: 35%;
+    background-position: top 4% right;
+    background-size: 30%;
   }
 }
 @media screen and (max-width: 554px) {
@@ -544,6 +544,7 @@ h1 span {
     justify-content: center;
   }
   .about-description {
+    background-position: top 2% right;
     background-size: 35%;
   }
 }
