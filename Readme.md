@@ -2,7 +2,7 @@ Portfolio
 Mi portafolio personal en donde muestro quien soy, mis habilidades, proyectos y formas de contactarme.
 
 Comenzando 🚀
-
+ 
 Pre-requisitos 📋
 - Navegador Web
 - Internet
