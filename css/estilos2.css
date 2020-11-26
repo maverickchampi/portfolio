@@ -8,7 +8,21 @@
 body {
   font-family: var(--font-primary);
   margin: 0;
+  padding: 0;
 }
+.container {
+  min-width: 200px;
+  max-width: 1264px;
+  height: inherit;
+  margin: 0 auto;
+  flex: 1;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+  flex-direction: inherit;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,21 +39,10 @@ a {
   top: 20px;
   background-color: var(--color-primary);
   color: white;
+  cursor: pointer;
   transition: linear 0.2s;
 }
-.container {
-  min-width: 200px;
-  max-width: 1264px;
-  height: auto;
-  margin: 0 auto;
-  flex: 1;
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-  flex-wrap: inherit;
-  flex-direction: inherit;
-}
+
 .header {
   background: linear-gradient(
     to right,
@@ -76,7 +79,7 @@ a {
   width: 35%;
   font-size: 25px;
 }
-.menu {
+.header-menu {
   background-color: var(--color-secondary);
   height: inherit;
   width: 65%;
@@ -405,7 +408,7 @@ h1 span {
   .header .logo {
     text-align: center;
   }
-  .menu {
+  .header-menu {
     position: fixed;
     background-color: var(--color-secondary);
     z-index: 3;
@@ -418,7 +421,7 @@ h1 span {
     align-items: center;
     transition: 0.3s;
   }
-  .menu.is-active {
+  .header-menu.is-active {
     left: 0;
   }
   .burger-button.is-active {
