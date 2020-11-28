@@ -57,7 +57,8 @@ ol {
   display: none;
 }
 .header-container,
-.main-container {
+.main-container,
+.about-container {
   min-width: 200px;
   max-width: 1264px;
   height: inherit;
@@ -115,7 +116,7 @@ ol {
   grid-area: title;
   display: flex;
   align-items: center;
-  background-image: url(../images/animation1.png);
+  background-image: url(../images/animationMain.png);
   background-repeat: no-repeat;
   background-position: 3% 2%;
   background-size: 70%;
@@ -128,10 +129,83 @@ ol {
   width: 100%;
   height: 100%;
 }
+.about {
+  background-color: rgb(230, 230, 230);
+  font-family: var(--font-secondary);
+}
+.about-container {
+  grid-template-columns: 40% 1fr;
+  grid-template-areas: "image text";
+}
+.about-container-image {
+  grid-area: image;
+  text-align: center;
+  background-image: url(../images/animationAbout.png);
+  background-repeat: no-repeat;
+  background-position: right 18% bottom 5%;
+  background-size: 35%;
+}
+.about-container-description {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: auto 18% auto 0;
+  font-size: 25px;
+  background-image: url(../images/animation3.png);
+  background-repeat: no-repeat;
+  background-position: top right 5%;
+  background-size: 50%;
+}
+.about-container-description h2 {
+  width: 180px;
+  white-space: nowrap;
+  background: linear-gradient(to bottom, transparent 50%, yellow 50%);
+}
+.about-container-image img{
+  margin: 20% 0;
+  width: 380px;
+}
+
+
+
+/*
+.about-image {
+  margin: 3%;
+  width: 30%;
+  display: inherit;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.about-photo {
+}
+.about-description {
+  width: 70%;
+  padding: 3%;
+  height: auto;
+  font-size: 20px;
+  display: inherit;
+  margin: 3%;
+  flex-wrap: wrap;
+  background-image: url(../images/animation3.png);
+  background-repeat: no-repeat;
+  background-position: top 10% right 10%;
+  background-size: 25%;
+} */
 
 @media screen and (max-width: 1264px) {
   h1 {
     font-size: 3.5vw;
+  }
+  .about-container-description {
+    font-size: 2vw;
+  }
+  .about-container-description h2 {
+    width: 14.5vw;
+  }
+  .about-container-image img{
+    width: 30vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -180,5 +254,32 @@ ol {
   }
   .header-container-menu.is-active {
     left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3.5vw;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "text"
+                         "image";
+  }
+  .about-container-image img{
+    margin: 0 0 10%;
+    width: 30%;
+  }
+  .about-container-description {
+    margin: 5% 20% 2%;
+    background-position: top right;
+    background-size: 50%;
+    font-size: 2.5vw;
+  }
+  .about-container-description h2 {
+    width: 18vw;
+  }
+  .about-container-image {
+    background-position: right 40% bottom 11%;
+    background-size: 15%;
   }
 }
