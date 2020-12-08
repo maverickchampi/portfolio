@@ -1,235 +1,173 @@
 <!DOCTYPE html>
 <html lang="es" oncontextmenu="return false;">
-  <!-- <html lang="es"> -->
-  <head>
+<!-- <html lang="es"> -->
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="portfolio,portafolio,Maverick Champi">
+    <meta name="description" content="Portafolio de Maverick Champi">
+    <meta name="author" content="Maverick Champi">
     <title>Maverick Champi</title>
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@700&family=Raleway:wght@400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body onkeydown="return false;" onmousedown="return false;">
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@700&family=Raleway:wght@400&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body onkeydown="return false;" onmousedown="return false;">
     <div class="burger-button" id="burger-menu">
-      <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
     </div>
     <header class="header" id="home">
-      <div class="container">
-        <div class="header-title">
-          <p>PORTAFOLIO.</p>
+        <div class="header-container">
+            <div class="header-container-title">
+                <p>PORTAFOLIO.</p>
+            </div>
+            <nav class="header-container-menu">
+                <ol>
+                    <li>
+                        <a class="link-1" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="link-2" href="#sobremi">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a class="link-3" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="link-4" href="#contacto">Contacto</a>
+                    </li>
+                </ol>
+            </nav>
         </div>
-        <nav class="menu">
-          <ol>
-            <li>
-              <a class="link" href="#home">Home</a>
-            </li>
-            <li>
-              <a class="link1" href="#sobremi">Sobre mi</a>
-            </li>
-            <li>
-              <a class="link2" href="#proyectos">Proyectos</a>
-            </li>
-            <li>
-              <a class="link3" href="#contacto">Contacto</a>
-            </li>
-          </ol>
-        </nav>
-      </div>
     </header>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-title">
-          <h1>
-            MI NOMBRE ES<br />
-            <strong translate="no">MAVERICK CHAMPI</strong> <br />
-            <span>SOY DESARROLLADOR WEB</span>
-          </h1>
-        </div>
-        <div class="hero-image">
-          <img src="images/foto1.jpeg" alt="Imagen principal del sitio" />
-        </div>
-      </div>
-    </section>
-    <section class="about" id="sobremi">
-      <div class="container">
-        <figure class="about-image">
-          <img src="images/foto2.png" class="about-photo" alt="Foto sobre mi" />
-          <img src="images/animation2.png" class="about-animation" alt="">
-        </figure>
-        <div class="about-description">
-          <h2>SOBRE MI</h2>
-          <p>
-            Soy Maverick Champi y me desempeño como Desarrollador Web.
-            Estudiante de la carrera de Computación e Informática en el
-            Instituto Superior Cibertec. Tengo 19 años y soy un apasionado a la
-            tecnología.
-          </p>
-          <p>
-            Además del desarrollo web me gusta practicar atletismo, leer y ver
-            memes. Siempre busco dar mi mejor desempeño en mis proyectos de los
-            cuales estoy orgulloso. Con ganas de aprender y superar a mi mismo.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="skills" id="habilidades">
-      <div class="container">
-        <div class="skills-title">
-          <h2>HABILIDADES</h2>
-        </div>
-        <div class="skill-box-master">
-          <div class="skill-box">
-            <h3>Desarrollo Frontend</h3>
-            <picture>
-              <img src="images/frontend.png" alt="Logo Frontend" />
-            </picture>
-            <br />
-            <i class="fab fa-html5" title="Html5"> Html 5</i>
-            <i class="fab fa-css3-alt" title="Css3"> Css 3</i>
-            <i class="fab fa-js-square" title="JavaScript"> JavaScript</i>
-          </div>
-          <div class="skill-box">
-            <h3>Desarrollo Backend</h3>
-            <picture>
-              <img src="images/backend.png" alt="Logo Backend" />
-            </picture>
-            <br />
-            <i class="fab fa-java" title="Java SE/EE"> Java SE/EE</i>
-            <i class="fab fa-cuttlefish" title="C#"
-              ><strong>#</strong> C-Sharp</i
-            >
-            <i class="fas fa-database" title="Sql"> <span>Sql</span></i>
-          </div>
-          <div class="skill-box">
-            <h3>Control de Versiones</h3>
-            <picture>
-              <img src="images/terminal.png" alt="Logo de Terminal" />
-            </picture>
-            <br />
-            <i class="fab fa-git-alt" title="Git"> Git</i>
-            <i class="fab fa-github" title="GitHub"> GitHub</i>
-            <br />
-            <!-- <i class="fas fa-terminal" title="Terminal">
-              <span>Terminal</span></i
-            >
-            <i class="fab fa-linux" title="Linux"> Linux</i> -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="projects">
-      <div class="container">
-        <div class="projects-title" id="proyectos">
-          <h2>PROYECTOS</h2>
-        </div>
-        <div class="projects-items">
-          <a href="https://www.google.com" class="projects-details">
-            <img src="images/projects.png" alt="Imagen de proyecto" />
-            <p>
-              <img src="images/search.png" alt="Imagen de lupa" />
-              Tienda Store<br />
-              Html5,Css3,Js
-            </p>
-          </a>
-          <a href="#" class="projects-details">
-            <img src="images/web2.jpg" alt="Imagen de proyecto" />
-            <p>
-              <img src="images/search.png" alt="Imagen de lupa" />
-              Tienda Store<br />
-              Html5,Css3,Js
-            </p></a
-          >
-          <a href="#" class="projects-details">
-            <img src="images/projects.png" alt="Imagen de proyecto" />
-            <p>
-              <img src="images/search.png" alt="Imagen de lupa" />
-              Tienda Store<br />
-              Html5,Css3,Js
-            </p></a
-          >
-          <a href="#" class="projects-details">
-            <img src="images/web3.jpg" alt="Imagen de proyecto" />
-            <p>
-              <img src="images/search.png" alt="Imagen de lupa" />
-              Tienda Store<br />
-              Html5,Css3,Js
-            </p></a
-          >
-          <a href="#" class="projects-details">
-            <img src="images/web2.jpg" alt="Imagen de proyecto" />
-            <p>
-              <img src="images/search.png" alt="Imagen de lupa" />
-              Tienda Store<br />
-              Html5,Css3,Js
-            </p></a
-          >
-        </div>
-      </div>
-    </section>
-    <footer class="contact" id="contacto">
-      <div class="container">
-        <div class="contact-title">
-          <h3>¿Qué esperas?...</h3>
-          <h2>CONTACTO</h2>
-        </div>
-        <div class="contact-description">
-          <i class="fas fa-phone-alt"> <span>+51 961835589</span></i>
-          <i class="fas fa-envelope"> <span>maverick.champi@gmail.com</span></i>
-          <i class="fas fa-map-marker-alt"> <span>Lima,Perú</span></i>
-        </div>
-        <div class="contact-red_social">
-          <a href="https://wa.link/abw60e"
-            ><i class="fab fa-whatsapp-square"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/maverickchampi/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/maverickchampi"
-            ><i class="fab fa-github-square"></i
-          ></a>
-        </div>
-        <div class="footer">@2020.Maverick Champi</div>
-      </div>
-    </footer>
+    <main class="main">
+        <section class="hero">
+            <article class="hero-container">
+                <div class="hero-container-title">
+                    <h1>
+                        MI NOMBRE ES<br />
+                        <strong translate="no">MAVERICK CHAMPI</strong> <br />
+                        <span>SOY DESARROLLADOR WEB</span>
+                    </h1>
+                </div>
+                <picture class="hero-container-image">
+                    <img src="images/fotoPrincipal.png" alt="Imagen principal" />
+                </picture>
+            </article>
+        </section>
+        <section class="about" id="sobremi">
+            <article class="about-container">
+                <picture class="about-container-image">
+                    <img src="images/fotoSecundaria.png" alt="Maverick Champi" title="Maverick Champi" />
+                </picture>
+                <div class="about-container-description">
+                    <h2>SOBRE MI</h2>
+                    <p>
+                        Soy Maverick Champi y me desempeño como Desarrollador Web.
+                        Estudiante de la carrera de Computación e Informática en el
+                        Instituto Superior Cibertec. Tengo 19 años y soy un apasionado a la
+                        tecnología.
+                    </p>
+                    <p>
+                        Además del desarrollo web me gusta practicar atletismo, leer y ver
+                        memes. Siempre busco dar mi mejor desempeño en mis proyectos de los
+                        cuales estoy orgulloso. Con ganas de aprender y superar a mi mismo.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="skills" id="habilidades">
+            <article class="skills-container">
+                <div class="skills-container-title">
+                    <h2>HABILIDADES</h2>
+                </div>
+                <div class="skills-container-details">
+                    <div class="skills-container-details-box">
+                        <h3>Desarrollo Frontend</h3>
+                        <picture>
+                            <img src="images/frontend.png" alt="Logo Frontend" title="Desarrollo Frontend" />
+                        </picture>
+                        <div class="skills-container-details-box-items">
+                            <div class="skills-container-details-box-items-icon">
+                                <i class="fab fa-html5" title="Html5"> Html 5</i>
+                                <i class="fab fa-css3-alt" title="Css3"> Css 3</i>
+                                <i class="fab fa-js-square" title="JavaScript"> JavaScript</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-container-details-box">
+                        <h3>Desarrollo Backend</h3>
+                        <picture>
+                            <img src="images/backend.png" alt="Logo Backend" title="Desarrollo Backend" />
+                        </picture>
+                        <div class="skills-container-details-box-items">
+                            <div class="skills-container-details-box-items-icon">
+                                <i class="fab fa-java" title="Java SE/EE"> Java SE/EE</i>
+                                <i class="fab fa-cuttlefish" title="C#"><strong>#</strong> C-Sharp</i>
+                                <i class="fas fa-database" title="Sql"> <span>Sql</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-container-details-box">
+                        <h3>Control de Versiones</h3>
+                        <picture>
+                            <img src="images/versiones.png" alt="Logo de Terminal" title="Control de versiones" />
+                        </picture>
+                        <div class="skills-container-details-box-items">
+                            <div class="skills-container-details-box-items-icon">
+                                <i class="fab fa-git-alt" title="Git"> Git</i>
+                                <i class="fab fa-github" title="GitHub"> GitHub</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="projects">
+            <article class="projects-container">
+                <div class="projects-container-title" id="proyectos">
+                    <h2>PROYECTOS</h2>
+                </div>
+                <div class="projects-container-items">
+                    <a href="https://www.google.com" class="projects-container-items-details">
+                        <img src="images/project-one.png" alt="Imagen de proyecto" />
+                        <p>
+                            <img src="images/search-projects.png" alt="Imagen de lupa" />
+                            Tienda Store<br />
+                            Html5,Css3,Js
+                        </p>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <footer class="footer" id="contacto">
+            <div class="footer-container">
+                <div class="footer-container-title">
+                    <h3>¿Qué esperas?...</h3>
+                    <h2>CONTACTO</h2>
+                </div>
+                <div class="footer-container-description">
+                    <i class="fas fa-phone-alt"> <span>+51 961835589</span></i>
+                    <i class="fas fa-envelope"> <span>maverick.champi@gmail.com</span></i>
+                    <i class="fas fa-map-marker-alt"> <span>Lima,Perú</span></i>
+                </div>
+                <div class="footer-container-red_social">
+                    <a href="https://wa.link/abw60e"><i class="fab fa-whatsapp-square"></i></a>
+                    <a href="https://www.linkedin.com/in/maverickchampi/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/maverickchampi"><i class="fab fa-github-square"></i></a>
+                </div>
+                <div class="footer-container-autor">2020.Maverick Champi</div>
+            </div>
+        </footer>
 
-    <script
-      src="https://kit.fontawesome.com/905fa6d085.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      const menu = document.querySelector(".menu");
-      const burgerbutt = document.querySelector(".burger-button");
-      const burgerButton = document.querySelector("#burger-menu");
-      const ipad = window.matchMedia("(max-width: 767px)");
-      runBurgerMenu(ipad.matches);
-      ipad.addListener((event) => {
-        runBurgerMenu(event.matches);
-      });
 
-      document.querySelector(".link").addEventListener("click", hideShow);
-      document.querySelector(".link1").addEventListener("click", hideShow);
-      document.querySelector(".link2").addEventListener("click", hideShow);
-      document.querySelector(".link3").addEventListener("click", hideShow);
-      burgerButton.addEventListener("click", hideShow);
 
-      function hideShow() {
-        if (menu.classList.contains("is-active")) {
-          menu.classList.remove("is-active");
-          burgerbutt.classList.remove("is-active");
-        } else {
-          menu.classList.add("is-active");
-          burgerbutt.classList.add("is-active");
-        }
-      }
-      function runBurgerMenu(yes) {
-        if (yes) {
-          burgerButton.addEventListener("click", hideShow);
-        } else {
-          burgerButton.removeEventListener("click", hideShow);
-        }
-      }
-    </script>
-  </body>
+    </main>
+
+    <script src="https://kit.fontawesome.com/905fa6d085.js" crossorigin="anonymous"></script>
+    <script src="js/function.js"></script>
+</body>
+
 </html>
