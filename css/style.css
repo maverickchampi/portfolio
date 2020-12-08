@@ -12,11 +12,11 @@ body {
 h1 {
   font-family: var(--font-secondary);
   font-weight: 400;
-  font-size: 45px;
+  font-size: 42px;
   line-height: 1.4;
   color: #fff;
   margin-top: 0.5em;
-  margin-left: 2.1em;
+  margin-left: 2.6em;
   white-space: nowrap;
   z-index: 2;
 }
@@ -107,7 +107,7 @@ ol {
   font-size: 16px;
 }
 .hero {
-  background: linear-gradient(to right, var(--color-primary) 50%, #eceaea 50%);
+  background: linear-gradient(to right, var(--color-primary) 50%, #dbdbdb 50%);
   color: #fff;
 }
 .hero-container {
@@ -349,7 +349,7 @@ ol {
 }
 @media screen and (max-width: 1264px) {
   h1 {
-    font-size: 3.5vw;
+    font-size: 3.3vw;
   }
   .about-container-description {
     font-size: 2vw;
@@ -460,7 +460,7 @@ ol {
 }
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 3.5vw;
+    font-size: 3.22vw;
   }
   .about-container {
     grid-template-columns: 1fr;
