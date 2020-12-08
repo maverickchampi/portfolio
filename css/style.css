@@ -119,7 +119,7 @@ ol {
   grid-area: title;
   display: flex;
   align-items: center;
-  background-image: url(../images/animationMain.png);
+  background-image: url(https://i.imgur.com/PepRhjg.png);
   background-repeat: no-repeat;
   background-position: 3% 2%;
   background-size: 70%;
@@ -143,7 +143,7 @@ ol {
 .about-container-image {
   grid-area: image;
   text-align: center;
-  background-image: url(../images/animationAbout.png);
+  background-image: url(https://i.imgur.com/oZG7Bbf.png);
   background-repeat: no-repeat;
   background-position: right 18% bottom 5%;
   background-size: 35%;
@@ -155,7 +155,7 @@ ol {
   justify-content: start;
   margin: auto 18% auto 0;
   font-size: 25px;
-  background-image: url(../images/animationAbout2.png);
+  background-image: url(https://i.imgur.com/CnIJ0LH.png);
   background-repeat: no-repeat;
   background-position: top right 5%;
   background-size: 50%;
@@ -184,7 +184,7 @@ ol {
   display: flex;
   justify-content: center;
   margin: 2% 0;
-  background-image: url(../images/animationSection.png);
+  background-image: url(https://i.imgur.com/F3dpEjQ.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: 16%;
@@ -242,7 +242,7 @@ ol {
   display: flex;
   justify-content: center;
   margin: 2% 0;
-  background-image: url(../images/animationSection.png);
+  background-image: url(https://i.imgur.com/F3dpEjQ.png);
   background-position: left;
   background-repeat: no-repeat;
   background-size: 16%;
