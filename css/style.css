@@ -231,6 +231,7 @@ ol {
   background-color: #fff;
 }
 .projects-container {
+  margin-bottom: 15px;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -352,10 +353,10 @@ ol {
     font-size: 3.36vw;
   }
   .about-container-description {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
   .about-container-description h2 {
-    width: 14.5vw;
+    width: 14.6vw;
   }
   .about-container-image img {
     width: 30vw;
@@ -383,7 +384,7 @@ ol {
     width: 10%;
   }
   .projects-container-items-details p {
-    font-size: 1.2vw;
+    font-size: 1.25vw;
   }
   .footer-container-title h3 {
     font-size: 1.3vw;
