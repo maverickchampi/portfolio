@@ -214,6 +214,7 @@ ol {
 .skills-container-details-box i {
   font-size: 32px;
   margin: 2% 0 0 15%;
+  display: flex;
 }
 .skills-container-details-box picture {
   text-align: center;
