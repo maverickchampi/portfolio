@@ -58,6 +58,7 @@
 
     <script src="https://kit.fontawesome.com/905fa6d085.js" crossorigin="anonymous"></script>
     <script src="js/portfolio.js"></script>
+    <script src="js/block.js"></script>
 </body>
 
 </html>
