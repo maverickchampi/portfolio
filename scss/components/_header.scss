@@ -1,0 +1,150 @@
+.header {
+  min-width: 250px;
+  min-height: 250px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url(../images/front.svg);
+    background-repeat: no-repeat;
+    background-position: center right 12%;
+    background-size: 45%;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .content {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      font-size: 2.5em;
+      margin-top: 0;
+
+      .important {
+        color: $secondColor;
+      }
+
+      .pointer {
+        animation-name: parpadeo;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: parpadeo;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+      }
+      @-moz-keyframes parpadeo {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes parpadeo {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes parpadeo {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+
+    .buttons {
+      a {
+        font-size: 1.25em;
+        font-weight: 400;
+        text-decoration: none;
+        border: 1px solid $secondColor;
+        color: $secondColor;
+        padding: 10px 20px;
+        border-radius: 1px;
+        outline: none;
+        margin: 0;
+        transition: all 0.3s ease-out;
+        white-space: nowrap;
+
+        &:hover {
+          background-color: $secondColor;
+          color: $firstColor;
+        }
+
+        @media (max-width: 270px) {
+          &:last-child {
+            margin: 10px 0;
+          }
+        }
+      }
+
+      @media (max-width: 270px) {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: $firstQuery) {
+      // margin-left: 0;
+      flex-direction: column;
+      order: 2;
+      // margin-top: 5%;
+      width: 90%;
+      margin-top: 40px;
+      height: auto;
+    }
+    @media (max-width: $secondQuery) {
+      margin-left: 5%;
+    }
+  }
+
+  @media (max-width: $firstQuery) {
+    flex-direction: column;
+    justify-content: center;
+    &::after {
+      background-position: center right;
+      opacity: 0.3;
+    }
+  }
+
+  @media (max-width: $secondQuery) {
+    &::after {
+      background-position: center center;
+      background-size: 80%;
+      opacity: 0.1;
+    }
+  }
+
+  @import "navigation";
+}

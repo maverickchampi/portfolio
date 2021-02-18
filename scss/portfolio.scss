@@ -1,0 +1,20 @@
+@import "components/variable";
+
+body {
+  font-family: $firstFont;
+  background-color: $firstColor;
+  color: $thirdColor;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+  @media(max-width: $firstQuery){
+    font-size: 13px;
+  }
+
+  @media(max-width: $secondQuery){
+    font-size: 11px;
+  }
+}
+
+@import "components/header"; /*Header y navigation*/
