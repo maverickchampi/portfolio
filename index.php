@@ -26,7 +26,7 @@
         <nav class="navigation">
             <div class="logo">
                 <a href="index.php"> <img src="images/icon.png" alt="Logo"> </a>
-                <a href="#" class="burger" id="burger"><i class="fa fa-bars"></i></a>
+                <!-- <a href="#" class="burger" id="burger"><i class="fa fa-bars"></i></a> -->
             </div>
             <ol class="menu" id="menu">
                 <li>
