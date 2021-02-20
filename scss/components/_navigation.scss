@@ -2,7 +2,7 @@
   background-color: $fourthColor;
   height: 100%;
   width: 75px;
-  position: fixed;
+  position: relative;
   z-index: 999;
   right: 0;
   text-align: center;
@@ -54,12 +54,9 @@
       }
     }
 
-    // @media (max-height: $thirdQuery) {
-    //   height: 15%;
-    // }
-    // @media (max-height: 475px) {
-    //   height: 10%;
-    // }
+    @media (max-height: $thirdQuery) {
+      height: 10%;
+    }
     @media (max-width: $firstQuery) {
       // border: 1px solid red;
       height: auto;
@@ -247,6 +244,7 @@
     order: 1;
     flex-direction: row;
     align-items: center;
+    position: fixed;
     top: 0;
   }
 

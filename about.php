@@ -24,7 +24,12 @@
             </div>
         </div> -->
         <div class="content">
-            
+            <h1>
+                About me
+            </h1>
+            <p>
+                
+            </p>
         </div>
         <nav class="navigation">
             <div class="logo">
