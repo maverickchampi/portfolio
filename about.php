@@ -14,14 +14,17 @@
 </head>
 
 <body>
-    <header class="header principal">
-        <div class="content">
+    <header class="header">
+        <!-- <div class="content">
             <h1 class="title">Hi, <br> I'm <span class="important" translate="no">Maverick Champi</span>, <br> web
                 developer<span class="pointer">.</span></h1>
             <div class="buttons">
                 <a href="works.php">My work</a>
                 <a href="contact.php">Contact me!</a>
             </div>
+        </div> -->
+        <div class="content">
+            
         </div>
         <nav class="navigation">
             <div class="logo">
@@ -30,10 +33,10 @@
             </div>
             <ol class="menu" id="menu">
                 <li>
-                    <a class="link active" href="index.php"><i class="fas fa-home"></i><span>Home</span></a>
+                    <a class="link" href="index.php"><i class="fas fa-home"></i><span>Home</span></a>
                 </li>
                 <li>
-                    <a class="link" href="about.php"><i class="fas fa-user"></i><span>About</span></a>
+                    <a class="link active" href="about.php"><i class="fas fa-user"></i><span>About</span></a>
                 </li>
                 <li>
                     <a class="link" href="works.php"><i class="fas fa-briefcase"></i><span>Works</span></a>

@@ -37,21 +37,6 @@ body {
   position: relative;
 }
 
-.header::after {
-  content: "";
-  background-image: url(../images/front.svg);
-  background-repeat: no-repeat;
-  background-position: center right 12%;
-  background-size: 45%;
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
 .header .content {
   margin-left: 10%;
   display: -webkit-box;
@@ -340,7 +325,7 @@ body {
 }
 
 .header .navigation .menu .link i {
-  font-size: 2em;
+  font-size: 1.8em;
   color: #f7f7f7;
 }
 
@@ -360,6 +345,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-height: 550px) {
+  .header .navigation .menu .link {
+    height: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -474,6 +465,21 @@ body {
             align-items: center;
     top: 0;
   }
+}
+
+.principal::after {
+  content: "";
+  background-image: url(../images/front.svg);
+  background-repeat: no-repeat;
+  background-position: center right 12%;
+  background-size: 45%;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 /*Header y navigation*/

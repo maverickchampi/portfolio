@@ -108,7 +108,7 @@
       color: $thirdColor;
 
       i {
-        font-size: 2em;
+        font-size: 1.8em;
         color: $thirdColor;
       }
 
@@ -128,6 +128,9 @@
         }
       }
 
+      @media (max-height: 550px) {
+        height: 50px;
+      }
       @media (max-width: $firstQuery) {
         width: 9vw;
         height: 40px;
@@ -161,11 +164,10 @@
       transition: all 0.3s ease-out;
     }
     @media (max-width: $secondQuery) {
-      
     }
   }
 
-  .show-menu{
+  .show-menu {
     left: 0;
   }
 
