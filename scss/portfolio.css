@@ -1,5 +1,4 @@
 body {
-  min-height: 400px;
   font-family: "Montserrat", sans-serif;
   background-color: #222222;
   color: #f7f7f7;
@@ -182,11 +181,12 @@ body {
 
 .header .navigation {
   background-color: #191919;
-  height: 100%;
   width: 75px;
   position: absolute;
   z-index: 999;
+  top: 0;
   right: 0;
+  bottom: 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,7 +482,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
-    top: 0;
   }
 }
 
