@@ -110,6 +110,13 @@
       i {
         font-size: 1.8em;
         color: $thirdColor;
+
+        @media (max-height: 550px) {
+          font-size: 24px;
+        }
+        @media (max-width: $firstQuery) {
+          font-size: 1.8em;
+        }
       }
 
       span {
@@ -129,7 +136,7 @@
       }
 
       @media (max-height: 550px) {
-        height: 50px;
+        height: 45px;
       }
       @media (max-width: $firstQuery) {
         width: 9vw;
@@ -191,20 +198,33 @@
           color: $secondColor;
         }
 
+        @media (max-height: 550px) {
+          font-size: 20px;
+        }
         @media (max-width: $firstQuery) {
+          font-size: 1.56em;
           margin-bottom: 0;
         }
       }
 
+      @media (max-height: 550px) {
+        height:35px;
+      }
       @media (max-width: $firstQuery) {
         width: 40px;
+        height: 40px;
       }
       @media (max-width: $secondQuery) {
         width: 30px;
       }
     }
+
+    @media (max-height: 550px) {
+      margin-bottom: 10px;
+    }
     @media (max-width: $firstQuery) {
       // border: 1px solid red;
+      margin-bottom: 0;
       height: auto;
       width: 20%;
       margin-right: 20px;
