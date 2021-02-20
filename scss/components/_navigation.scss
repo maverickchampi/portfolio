@@ -54,9 +54,12 @@
       }
     }
 
-    @media (max-height: 550px) {
-      height: 10%;
-    }
+    // @media (max-height: $thirdQuery) {
+    //   height: 15%;
+    // }
+    // @media (max-height: 475px) {
+    //   height: 10%;
+    // }
     @media (max-width: $firstQuery) {
       // border: 1px solid red;
       height: auto;
@@ -111,9 +114,9 @@
         font-size: 1.8em;
         color: $thirdColor;
 
-        @media (max-height: 550px) {
-          font-size: 24px;
-        }
+        // @media (max-height: $thirdQuery) {
+        //   font-size: 24px;
+        // }
         @media (max-width: $firstQuery) {
           font-size: 1.8em;
         }
@@ -135,9 +138,9 @@
         }
       }
 
-      @media (max-height: 550px) {
-        height: 45px;
-      }
+      // @media (max-height: 450px) {
+      //   height: 50px;
+      // }
       @media (max-width: $firstQuery) {
         width: 9vw;
         height: 40px;
@@ -156,6 +159,9 @@
       }
     }
 
+    @media (max-height: $thirdQuery) {
+      height: 90%;
+    }
     @media (max-width: $firstQuery) {
       // border: 1px solid red;
       height: 60px;
@@ -198,18 +204,18 @@
           color: $secondColor;
         }
 
-        @media (max-height: 550px) {
-          font-size: 20px;
-        }
+        // @media (max-height: $thirdQuery) {
+        //   font-size: 20px;
+        // }
         @media (max-width: $firstQuery) {
           font-size: 1.56em;
           margin-bottom: 0;
         }
       }
 
-      @media (max-height: 550px) {
-        height:35px;
-      }
+      // @media (max-height: $thirdQuery) {
+      //   height: 35px;
+      // }
       @media (max-width: $firstQuery) {
         width: 40px;
         height: 40px;
@@ -219,11 +225,12 @@
       }
     }
 
-    @media (max-height: 550px) {
-      margin-bottom: 10px;
+    @media (max-height: $thirdQuery) {
+      display: none;
     }
     @media (max-width: $firstQuery) {
       // border: 1px solid red;
+      display: flex;
       margin-bottom: 0;
       height: auto;
       width: 20%;
