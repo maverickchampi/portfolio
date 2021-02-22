@@ -1,0 +1,1 @@
+pug --wacth pug/index.pug --out "./" --pretty

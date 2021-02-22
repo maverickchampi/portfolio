@@ -1,0 +1,29 @@
+.navigation
+        
+    .logo
+        a(href="index.html")
+            img(src="images/icon.png" alt="Logo")
+
+    ol.menu#menu
+        
+        mixin item(url,name,value)
+            li
+                a.link(href= url)
+                    i(class= value)
+                    span= name
+                    
+        +item('index.html','Home','fas fa-home')
+        +item('about.html','About','fas fa-user')
+        +item('works.html','Works','fas fa-briefcase')
+        +item('contact.html','Contact','fas fa-envelope')
+
+    ol.social
+
+        mixin item(url,value)
+            li
+                a.link(href= url)
+                    i(class= value)
+            
+        +item('https://www.linkedin.com/in/maverickchampi/','fab fa-linkedin-in')
+        +item('https://github.com/maverickchampi','fab fa-github')
+        +item('https://wa.link/abw60e','fab fa-whatsapp')

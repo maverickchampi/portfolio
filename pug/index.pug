@@ -1,0 +1,24 @@
+doctype html
+html(lang="es")
+    head
+        include includes/head.pug
+    body
+        header.header.principal
+            .content
+                h1.title Hi,
+                    br
+                    | I'm 
+                    span.important(translate="no") Maverick Champi
+                    | ,
+                    br
+                    |web developer
+                    span.pointer .
+                .buttons
+                    a(href="works.html") My work
+                    a(href="contact.html") Contact me!
+            include includes/navigation.pug
+
+        script.
+            var elemento = document.getElementsByClassName("link");
+            elemento[0].className += " active";
+        include includes/js.pug

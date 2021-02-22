@@ -2,7 +2,7 @@
   background-color: $fourthColor;
   // height: 100%;
   width: 75px;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   top: 0;
   right: 0;
@@ -197,7 +197,7 @@
       i {
         margin-bottom: 10px;
         font-size: 1.56em;
-        color: $thirdColor;
+        color: $thirdColor;transition: all 0.3s ease-out;
 
         &:hover {
           color: $secondColor;

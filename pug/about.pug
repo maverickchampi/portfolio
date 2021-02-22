@@ -1,0 +1,39 @@
+doctype html
+html(lang="es")
+    head
+        include includes/head.pug
+    body
+        header.header
+            .content-about
+                .text 
+                    h1 About me
+                    p Professional dedicated to web development. Student of the computer science and computer science degree.
+                    p Integrated and organized problem solver person. I like television series, reading, walking.
+                    p The main area I work in is front-end development, although I also work on the back-end.
+                    p HTML, CSS, JS, creating small web applications and coding interactive designs.
+                    p Visit my 
+                        a(href="https://www.linkedin.com/in/maverickchampi/") LinkedIn 
+                        | profile for more details or just 
+                        a(href="contact.html") contact me.
+                .skills
+                    ul
+                        mixin item(name,value)
+                            li(class=name)
+                                i(class= value)
+                                = name
+                        +item('Html5','fab fa-html5')
+                        +item('Css3','fab fa-css3-alt')
+                        +item('Javascript','fab fa-js-square')
+                        li.Pug Pug
+                        +item('Sass','fab fa-sass')
+                        +item('Git','fab fa-git-alt')
+                        +item('GitHub','fab fa-github')
+                        +item('Php','fab fa-php')
+                        +item('Java','fab fa-java')
+                        +item('Sql','fas fa-database')
+            include includes/navigation.pug
+
+        script.
+            var elemento = document.getElementsByClassName("link");
+            elemento[1].className += " active";
+        include includes/js.pug

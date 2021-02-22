@@ -1,0 +1,14 @@
+doctype html
+html(lang="es")
+    head
+        include includes/head.pug
+    body
+        header.header
+            .content
+                h1 Works
+            include includes/navigation.pug
+
+        script.
+            var elemento = document.getElementsByClassName("link");
+            elemento[2].className += " active";
+        include includes/js.pug
