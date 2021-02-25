@@ -1,7 +1,7 @@
 .navigation {
   background-color: $fourthColor;
   // height: 100%;
-  width: 75px;
+  width: 80px;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -13,22 +13,26 @@
   justify-content: space-between;
 
   .logo {
-    width: 75px;
+    width: 80px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     height: 25%;
     // border: 1px solid red;
 
-    img {
-      margin-top: 15px;
-      width: 30px;
-      // border: 1px solid red;
+    a {
+      outline: none;
 
-      @media (max-width: $firstQuery) {
-        margin: 0;
-        // width: 20%;
-        // margin-left: -20px;
+      img {
+        margin-top: 15px;
+        width: 30px;
+        // border: 1px solid red;
+
+        @media (max-width: $firstQuery) {
+          margin: 0;
+          // width: 20%;
+          // margin-left: -20px;
+        }
       }
     }
 
@@ -101,6 +105,7 @@
     // border: 1px solid red;
 
     .link {
+      outline: none;
       text-decoration: none;
       display: flex;
       justify-content: center;
@@ -189,6 +194,7 @@
 
     .link {
       display: flex;
+      outline: none;
       justify-content: center;
       align-items: center;
       height: 40px;
@@ -197,7 +203,8 @@
       i {
         margin-bottom: 10px;
         font-size: 1.56em;
-        color: $thirdColor;transition: all 0.3s ease-out;
+        color: $thirdColor;
+        transition: all 0.3s ease-out;
 
         &:hover {
           color: $secondColor;

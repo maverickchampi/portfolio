@@ -3,18 +3,18 @@ html(lang="es")
     head
         include includes/head.pug
     body
-        header.header
+        header.header.about
             .content-about
                 .text 
-                    h1 About me
-                    p Professional dedicated to web development. Student of the computer science and computer science degree.
-                    p Integrated and organized problem solver person. I like television series, reading, walking.
-                    p The main area I work in is front-end development, although I also work on the back-end.
-                    p HTML, CSS, JS, creating small web applications and coding interactive designs.
-                    p Visit my 
+                    h1 Sobre mi
+                    p Profesional dedicado al desarrollo web. Estudiante de la carrera de Informática e Informática. 
+                    p Solucionador de problemas, integro y organizado. Me gustan las series, leer y caminar. 
+                    p El área principal en la que trabajo es el desarrollo front-end, pero también me desenvuelvo en el backend.
+                    p HTML, CSS, JS, creación de pequeñas aplicaciones web y codificación de diseños interactivos. 
+                    p Visita mi 
                         a(href="https://www.linkedin.com/in/maverickchampi/") LinkedIn 
-                        | profile for more details or just 
-                        a(href="contact.html") contact me.
+                        | para más detalles o simplemente 
+                        a(href="contact.html") contáctame.
                 .skills
                     ul
                         mixin item(name,value)
@@ -24,7 +24,9 @@ html(lang="es")
                         +item('Html5','fab fa-html5')
                         +item('Css3','fab fa-css3-alt')
                         +item('Javascript','fab fa-js-square')
-                        li.Pug Pug
+                        li.Pug 
+                            img(src="images/pug.png", alt="Pug")
+                            | Pug
                         +item('Sass','fab fa-sass')
                         +item('Git','fab fa-git-alt')
                         +item('GitHub','fab fa-github')

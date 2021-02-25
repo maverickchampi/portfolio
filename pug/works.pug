@@ -3,9 +3,30 @@ html(lang="es")
     head
         include includes/head.pug
     body
-        header.header
-            .content
-                h1 Works
+        header.header.works
+            .content-works
+                .title
+                    h1 Trabajos
+                .works
+                    .work
+                        a(href="central.html").presentation.green
+                                span Central
+                                br
+                                | Php · Sql · Html · Css · Js
+                        img(src="images/central.png", alt="Logo de Central")
+                    .work
+                        a(href="portfolio.html").presentation.yellow
+                            span Portfolio
+                            br
+                            | Pug · Sass · Js · Php · Sql
+                        img(src="images/portfolio.png", alt="Logo de Portfolio")
+                    .work
+                        a(href="nexflix.html").presentation
+                            span Nexflix
+                            br
+                            | Php · Html · Css · Js
+                        img(src="images/nexflix.png", alt="Logo de Nexflix")
+                    
             include includes/navigation.pug
 
         script.
