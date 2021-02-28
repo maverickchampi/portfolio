@@ -14,7 +14,7 @@ Construido con 🛠️
 -Js
 
 Versionado 📌
-1.0
+2.0
 
 Autores ✒️
 Maverick Champi Romero
