@@ -1,0 +1,26 @@
+doctype html
+html(lang="es")
+    head
+        include includes/head.pug
+    body
+        header.header.work
+            .content-work
+                .title
+                    h1 Portfolio
+                .screenshot
+                    img(src="https://i.ibb.co/gVF8h8t/portfolio-movil.png" alt="")
+                .text
+                    p Hice este proyecto en el 2021, es mi portafolio y aca muestro todo sobre mi y mis habilidades a través de mis proyectos, lo programe con preprocesadores, específicamente con Pug y Sass, también apliqué Js para el lado de fronted, php y sql para el lado de backend.
+                .buttons
+                    a(href="https://maverick-portfolio.herokuapp.com")
+                        i.fas.fa-external-link-alt
+                        |  Visitar sitio
+                    a(href="https://github.com/maverickchampi/portfolio")
+                        i.fab.fa-github
+                        |  Ver código
+            include includes/navigation.pug
+
+        script.
+            var elemento = document.getElementsByClassName("link");
+            elemento[2].className += " active";
+        include includes/js.pug

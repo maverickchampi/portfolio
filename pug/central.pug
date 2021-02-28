@@ -1,0 +1,26 @@
+doctype html
+html(lang="es")
+    head
+        include includes/head.pug
+    body
+        header.header.work
+            .content-work
+                .title
+                    h1 Central
+                .screenshot
+                    img(src="https://i.ibb.co/PxF2c9Q/central-movil.png" alt="")
+                .text
+                    p Hice este proyecto en el 2021, trata sobre un restaurante saludable llamado Central, donde puedes realizar compras, está programado en Html, Css, Js por parte de fronted y php, sql por parte de backend.
+                .buttons
+                    a(href="https://maverick-central.herokuapp.com")
+                        i.fas.fa-external-link-alt
+                        |  Visitar sitio
+                    a(href="https://github.com/maverickchampi/Central")
+                        i.fab.fa-github
+                        |  Ver código
+            include includes/navigation.pug
+
+        script.
+            var elemento = document.getElementsByClassName("link");
+            elemento[2].className += " active";
+        include includes/js.pug
