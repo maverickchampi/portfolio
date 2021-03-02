@@ -23,7 +23,8 @@ if ($name == "" || $email == "" || $subject == "" || $message == "") {
         echo "<script>alert('Mensaje enviado')</script>";
     } catch (Exception $e) {
         die("<script>alert('Error: " . $e->getMessage() . "')</script>");
-        echo "Línea del error : " . $e->getLine();
+        echo "<script>location.href='contact.html'</script>";
+        // echo "Línea del error : " . $e->getLine();
     } finally {
         $base = null;
     }
