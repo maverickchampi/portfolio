@@ -1,0 +1,136 @@
+.content-about {
+  margin: 5% 0 5% 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: calc(90% - 75px);
+
+  @media (max-width: $firstQuery) {
+    margin: 15% 5%;
+    width: 90%;
+  }
+  @media (max-width: $secondQuery) {
+    padding: 0;
+    margin: 5%;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .text {
+    width: 55%;
+
+    @media (max-width: $firstQuery) {
+      width: 60%;
+    }
+    @media (max-width: $secondQuery) {
+      width: 100%;
+      // margin-bottom: 25px;
+    }
+
+    h1 {
+      color: $secondColor;
+      font-size: 60px;
+      margin: 0;
+
+      @media (max-width: 894px) {
+        font-size: 3.125em;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 0;
+
+      @media (max-width: 894px) {
+        font-size: 1em;
+      }
+
+      a {
+        outline: none;
+        text-decoration: none;
+        color: $secondColor;
+
+        &:hover {
+          color: #dbdb00;
+        }
+      }
+    }
+  }
+
+  .skills {
+    width: 45%;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $firstQuery) {
+      width: 40%;
+    }
+    @media (max-width: $secondQuery) {
+      // margin: 5% 0;
+      // padding: 3% 0 10%;
+      margin: 0;
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 0;
+      // grid-template-columns: repeat(4,1fr);
+
+      li {
+        list-style: none;
+        // white-space: wrap;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        padding: 8px 6px;
+        border-radius: 5px;
+        margin: 3px;
+        color: $thirdColor;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+
+      .Html5 {
+        background-color: rgb(255, 68, 11);
+      }
+      .Css3 {
+        background-color: rgb(27, 31, 224);
+      }
+      .Pug {
+        background-color: #a86454;
+
+        img {
+          width: 15px;
+          margin-right: 5px;
+        }
+      }
+      .Javascript {
+        background-color: rgb(221, 202, 31);
+      }
+      .Sass {
+        background-color: rgb(197, 41, 171);
+      }
+      .Git {
+        background-color: rgb(233, 82, 23);
+      }
+      .GitHub {
+        background-color: rgb(71, 71, 71);
+      }
+      .Php {
+        background-color: rgb(94, 35, 189);
+      }
+      .Java {
+        background-color: rgb(245, 44, 44);
+      }
+      .Sql {
+        background-color: rgb(143, 143, 143);
+      }
+    }
+  }
+}

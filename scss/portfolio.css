@@ -482,6 +482,106 @@ body {
   }
 }
 
+.header .content-contact {
+  width: 50%;
+  margin: 40px auto;
+}
+
+@media (max-width: 767px) {
+  .header .content-contact {
+    margin: 80px auto;
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .content-contact {
+    width: 80%;
+  }
+}
+
+.header .content-contact h1 {
+  color: #ffff00;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 894px) {
+  .header .content-contact h1 {
+    font-size: 3.125em;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .content-contact h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.header .content-contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .content-contact form input {
+  height: 25px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  outline: none;
+  background-color: #cfcfcf;
+}
+
+@media (max-width: 480px) {
+  .header .content-contact form input {
+    padding: 5px 10px;
+  }
+}
+
+.header .content-contact form textarea {
+  height: 160px;
+  padding: 15px 20px;
+  margin: 10px 0 40px;
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  outline: none;
+  background-color: #cfcfcf;
+}
+
+@media (max-width: 767px) {
+  .header .content-contact form textarea {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .content-contact form textarea {
+    padding: 10px;
+    height: 140px;
+  }
+}
+
+.header .content-contact form button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  width: 33%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-self: flex-end;
+  cursor: pointer;
+  outline: none;
+  background-color: #ffff00;
+  border: none;
+  border-radius: 10px;
+}
+
+.header .content-contact form button:hover {
+  background-color: #dbdb00;
+}
+
 @media (max-width: 767px) {
   .header {
     flex-direction: column;
@@ -810,6 +910,12 @@ body {
 
 @media (max-height: 506px) {
   .header-work {
+    height: auto;
+  }
+}
+
+@media (max-height: 672px) {
+  .header-contact {
     height: auto;
   }
 }

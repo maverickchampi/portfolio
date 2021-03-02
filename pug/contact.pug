@@ -3,9 +3,15 @@ html(lang="es")
     head
         include includes/head.pug
     body
-        header.header
-            .content
-                h1 Contact
+        header.header.header-contact
+            .content-contact
+                h1 Contactáme
+                form(action="enviar.php")
+                    input(type="text" name="Name" id="Name" placeholder="Nombre" required)
+                    input(type="email" name="Email" id="Email" placeholder="Correo" required)
+                    input(type="text" name="Subject" id="Subject" placeholder="Asunto" required)
+                    textarea(name="Message" id="Message" cols="30" rows="10" placeholder="Mensaje" required)
+                    button(type="submit" name="Send" id="Send") Enviar
             include includes/navigation.pug
 
         script.

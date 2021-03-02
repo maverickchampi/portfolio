@@ -12,9 +12,16 @@
     <link rel="icon" href="images/icon.png">
   </head>
   <body>
-    <header class="header">
-      <div class="content">
-        <h1>Contact</h1>
+    <header class="header header-contact">
+      <div class="content-contact">
+        <h1>Contactáme</h1>
+        <form action="enviar.php">
+          <input type="text" name="Name" id="Name" placeholder="Nombre" required>
+          <input type="email" name="Email" id="Email" placeholder="Correo" required>
+          <input type="text" name="Subject" id="Subject" placeholder="Asunto" required>
+          <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+          <button type="submit" name="Send" id="Send">Enviar</button>
+        </form>
       </div>
       <div class="navigation">
         <div class="logo"><a href="index.html"><img src="images/icon.png" alt="Logo"></a></div>
