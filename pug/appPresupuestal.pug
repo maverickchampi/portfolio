@@ -1,0 +1,26 @@
+doctype html
+html(lang="es")
+    head
+        include includes/head.pug
+    body
+        header.header.header-work
+            .content-work
+                .title
+                    h1 App Presupuestal
+                .screenshot
+                    img(src="https://i.ibb.co/1bf59Yv/app-Presupuestal-movil.png" alt="")
+                .text
+                    p Hice este proyecto mientras aprendia JavaScript, trata sobre aplicativo que calcula entre tus ingresos y egresos.
+                .buttons
+                    a(href="https://maverickchampi.github.io/App-Presupuestal/")
+                        i.fas.fa-external-link-alt
+                        |  Visitar sitio
+                    a(href="https://github.com/maverickchampi/App-Presupuestal")
+                        i.fab.fa-github
+                        |  Ver código
+            include includes/navigation.pug
+
+        script.
+            var elemento = document.getElementsByClassName("link");
+            elemento[2].className += " active";
+        include includes/js.pug

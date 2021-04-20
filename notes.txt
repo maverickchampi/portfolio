@@ -1,1 +1,2 @@
-pug --wacth pug/index.pug --out "./" --pretty
+npm i pug, npm install -g sass
+pug pug/index.pug --out "./" --pretty

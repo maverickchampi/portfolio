@@ -241,6 +241,10 @@ body {
   margin-right: 5px;
 }
 
+.header .content-about .skills ul .ReactJs {
+  background-color: #35abc9;
+}
+
 .header .content-about .skills ul .Html5 {
   background-color: #ff440b;
 }
@@ -399,6 +403,14 @@ body {
   font-size: 1.875em;
   display: inline;
   font-weight: bold;
+}
+
+.header .content-works .works .work .appPresupuestal {
+  background-color: #7b4296;
+}
+
+.header .content-works .works .work .moonConf {
+  background-color: #28527a;
 }
 
 .header .content-works .works .work .green {
