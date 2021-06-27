@@ -1,18 +1,7 @@
-Portfolio
-Mi portafolio personal en donde muestro quien soy, mis habilidades, proyectos y formas de contactarme.
-
+# Portafolio
+Mi portafolio personal en donde muestro quien soy, mis habilidades y proyectos.
 Comenzando 🚀
  
-Pre-requisitos 📋
-- Navegador Web
-- Internet
-
-Construido con 🛠️
--Visual Code - Editor de código
--Html
--Css
--Js
-
 Versionado 📌
 2.0
 
