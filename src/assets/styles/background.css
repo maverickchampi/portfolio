@@ -1,0 +1,12 @@
+@import url(index.css);
+
+.background {
+  height: 100vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1200px;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
