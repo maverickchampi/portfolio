@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import CertificatesItem from "../components/atom/CertificatesItem";
+import CardItem from "../components/atom/CardItem";
 import { selectLink } from "../constant/Utils";
 import "../assets/styles/about.css";
 
@@ -85,6 +86,23 @@ const About = () => {
                 />
               </section>
             </div>
+            {/* <h4
+              style={{
+                textAlign: "center",
+                fontSize: "1.5em",
+                // margin: "5px 0",
+              }}
+            >
+              Skills
+            </h4> */}
+            {/* <div className="content__card">
+              <CardItem />
+              <CardItem />
+              <CardItem />
+              <CardItem />
+              <CardItem />
+              <CardItem />
+            </div> */}
           </div>
         </div>
       </main>

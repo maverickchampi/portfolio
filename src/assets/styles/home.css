@@ -37,7 +37,6 @@
     opacity: 1;
   }
 }
-
 .home__link {
   border: 1px solid var(--firstHover);
   border-radius: 2px;
@@ -46,7 +45,7 @@
   font-weight: 400;
   margin-top: 5px;
   outline: none;
-  padding: 5px 10px;
+  padding: 8px 15px;
   text-decoration: none;
   transition: all 0.3s ease-out;
   white-space: nowrap;
