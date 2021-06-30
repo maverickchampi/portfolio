@@ -25,7 +25,7 @@ const About = () => {
                   <h2>Maverick Champi</h2>
                   <p>
                     Apasionado a la tecnología, especializado en el desarrollo
-                    web. Buscando aprender y solucionar problemas, me gustas los
+                    web. Buscando aprender y solucionar problemas, me gustan los
                     retos y más cuando trabajo en equipo. Mis pasatiempos son
                     hacer deportes, ver series y viajar. Puedes visitar mi{" "}
                     <a
