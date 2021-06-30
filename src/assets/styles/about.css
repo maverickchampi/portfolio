@@ -151,7 +151,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .about .content__certificates img {
-    max-height: 310px;
+    max-height: 315px;
   }
 }
 @media screen and (min-width: 1025px) {
