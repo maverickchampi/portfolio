@@ -1,7 +1,7 @@
 export const params = {
   particles: {
     number: {
-      value: 80,
+      value: 85,
       density: {
         enable: true,
         value_area: 800,

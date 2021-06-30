@@ -4,7 +4,7 @@ import { selectLink } from "../constant/Utils";
 const Projects = () => {
   useEffect(() => {
     selectLink("projects");
-  }, [selectLink]);
+  }, []);
 
   return (
     <>

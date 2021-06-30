@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MenuItem from "../../components/atom/MenuItem";
 import "../../assets/styles/header.css";
 
 const Header = () => {
@@ -11,38 +12,39 @@ const Header = () => {
             <img
               src="https://i.ibb.co/Rh9Ywbm/logo.png"
               className="header__logo"
-              alt="Logo de portafolio"
-            ></img>
+              alt="Logo"
+            />
           </Link>
 
           <nav className="menu">
             <div className="container">
               <ul>
                 <li>
-                  <Link id="home" to="/" className="link-style menu__link">
-                    <i class="fas fa-home"></i>
-                    <span>Inicio</span>
-                  </Link>
+                  <MenuItem
+                    id="home"
+                    to="/"
+                    classLink="link-style menu__link"
+                    classIcon="fas fa-home"
+                    text="Inicio"
+                  />
                 </li>
                 <li>
-                  <Link
+                  <MenuItem
                     id="about"
                     to="/about"
-                    className="link-style menu__link"
-                  >
-                    <i class="fas fa-address-card"></i>
-                    <span>Sobre mi</span>
-                  </Link>
+                    classLink="link-style menu__link"
+                    classIcon="fas fa-address-card"
+                    text="Sobre mi"
+                  />
                 </li>
                 <li>
-                  <Link
+                  <MenuItem
                     id="projects"
                     to="/projects"
-                    className="link-style menu__link"
-                  >
-                    <i class="fas fa-folder-open"></i>
-                    <span>Proyectos</span>
-                  </Link>
+                    classLink="link-style menu__link"
+                    classIcon="fas fa-folder-open"
+                    text="Proyectos"
+                  />
                 </li>
               </ul>
             </div>
