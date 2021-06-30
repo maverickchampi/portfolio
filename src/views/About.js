@@ -100,8 +100,6 @@ const About = () => {
               <CardItem />
               <CardItem />
               <CardItem />
-              <CardItem />
-              <CardItem />
             </div>
           </div>
         </div>

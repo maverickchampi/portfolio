@@ -113,9 +113,9 @@
   .about .content__certificates a:nth-of-type(2) {
     margin-left: 7.5px;
   }
-  .about .content__card {
+  /* .about .content__card {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }
 @media screen and (min-width: 769px) {
   .about {
@@ -148,10 +148,10 @@
     margin-left: 0;
   }
   .about .content__card {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .about .content__certificates img {
-    max-height: 310px;
+    max-height: 350px;
   }
 }
 @media screen and (min-width: 1025px) {
