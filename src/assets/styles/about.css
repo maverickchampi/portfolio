@@ -66,7 +66,7 @@
 .about .content__description ul {
   padding-left: 30px;
   padding-right: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 .about .content__description li {
   list-style: none;
@@ -151,7 +151,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .about .content__certificates img {
-    max-height: 315px;
+    max-height: 310px;
   }
 }
 @media screen and (min-width: 1025px) {
