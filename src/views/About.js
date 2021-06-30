@@ -95,14 +95,14 @@ const About = () => {
             >
               Skills
             </h4> */}
-            {/* <div className="content__card">
+            <div className="content__card">
               <CardItem />
               <CardItem />
               <CardItem />
               <CardItem />
               <CardItem />
               <CardItem />
-            </div> */}
+            </div>
           </div>
         </div>
       </main>

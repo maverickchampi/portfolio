@@ -4,7 +4,7 @@ const CardItem = () => {
   return (
     <>
       <div style={{ textAlign: "center", padding: "45px 15px" }}>
-        <i class="fas fa-database" style={{ fontSize: "40px" }}></i>
+        <i className="fas fa-database" style={{ fontSize: "40px" }}></i>
         <h4>Frontend</h4>
         <ul>
           <li>React</li>
