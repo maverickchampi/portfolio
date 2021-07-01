@@ -145,6 +145,7 @@
 .about .content__certificates img {
   border-radius: 5px;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .img-show {
@@ -209,7 +210,6 @@
   }
   .about .content__certificates img {
     max-height: 310px;
-    height: 100%;
   }
   .about .content__card {
     gap: 0;
