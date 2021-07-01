@@ -50,8 +50,8 @@ const About = () => {
                   <ul>
                     <li>{">"} I.E.S Cibertec - Computación e Informática</li>
                     <li>{">"} Platzi</li>
+                    <li>{">"} EdTeam</li>
                     <li>{">"} Udemy</li>
-                    <li>{">"} Crehana</li>
                   </ul>
                 </div>
               </section>
@@ -64,18 +64,11 @@ const About = () => {
                   classImg=""
                 />
                 <CertificatesItem
-                  urlLink="https://drive.google.com/drive/folders/1cT7GO1ug-Se0qLvLiKhjWb2ggtX7Eas9?usp=sharing"
+                  urlLink="https://drive.google.com/drive/folders/17N4hg2ZpMWBJZmqo8saOxhVwrQwTMZ8x?usp=sharing"
                   classLink="link-style"
-                  urlImg="https://i.ibb.co/fGDKG8Y/cibertec.png"
-                  altImg="Certificados Cibertec"
+                  urlImg="https://i.ibb.co/t3VhLxz/certificado-curso-api-rest.png"
+                  altImg="Certificados EdTeam"
                   classImg=""
-                />
-                <CertificatesItem
-                  urlLink="https://drive.google.com/drive/folders/1cT7GO1ug-Se0qLvLiKhjWb2ggtX7Eas9?usp=sharing"
-                  classLink="link-style"
-                  urlImg="https://i.ibb.co/gg9QHW3/fundamentos.png"
-                  altImg="Certificados Escuela JS Platzi"
-                  classImg="img-show"
                 />
                 <CertificatesItem
                   urlLink="https://drive.google.com/drive/folders/15ez4kmCxYboSe4ShXfYMHrlv931E5jB3?usp=sharing"
@@ -84,22 +77,42 @@ const About = () => {
                   altImg="Certificados Escuela JS Platzi"
                   classImg="img-show"
                 />
+                <CertificatesItem
+                  urlLink="https://drive.google.com/drive/folders/1cT7GO1ug-Se0qLvLiKhjWb2ggtX7Eas9?usp=sharing"
+                  classLink="link-style"
+                  urlImg="https://i.ibb.co/fGDKG8Y/cibertec.png"
+                  altImg="Certificados Cibertec"
+                  classImg="img-show"
+                />
               </section>
             </div>
-            {/* <h4
-              style={{
-                textAlign: "center",
-                fontSize: "1.5em",
-                // margin: "5px 0",
-              }}
-            >
-              Skills
-            </h4> */}
             <div className="content__card">
-              <CardItem />
-              <CardItem />
-              <CardItem />
-              <CardItem />
+              <CardItem
+                classIcon="fas fa-database"
+                titleCard="Databases"
+                items={["MySql", "Sql Server", "Oracle"]}
+              />
+              <CardItem
+                classIcon="fas fa-server"
+                titleCard="Backend"
+                items={["Java", "Spring", "C#"]}
+              />
+              <CardItem
+                classIcon="fas fa-laptop"
+                titleCard="Frontend"
+                classUl="column-grid-frontend"
+                items={[
+                  "JavaScript",
+                  "React Js",
+                  "Angular",
+                  "TypeScript",
+                  "Html",
+                  "Pug",
+                  "Css",
+                  "Bootstrap",
+                  "Sass",
+                ]}
+              />
             </div>
           </div>
         </div>

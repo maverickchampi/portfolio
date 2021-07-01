@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 7px 0 3px;
+  padding: 10px 0 5px;
 }
 .menu__link i {
   font-size: 1em;

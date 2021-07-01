@@ -1,16 +1,15 @@
 import React from "react";
 
-const CardItem = () => {
+const CardItem = ({ classIcon, titleCard, classUl = "", items }) => {
   return (
     <>
-      <div style={{ textAlign: "center", padding: "45px 15px" }}>
-        <i className="fas fa-database" style={{ fontSize: "40px" }}></i>
-        <h4>Frontend</h4>
-        <ul>
-          <li>React</li>
-          <li>Html</li>
-          <li>Css</li>
-          <li>JavaScript</li>
+      <div>
+        <i className={classIcon}></i>
+        <h4>{titleCard}</h4>
+        <ul className={classUl}>
+          {items.map((item, key) => (
+            <li key={key}>{item}</li>
+          ))}
         </ul>
       </div>
     </>

@@ -1,7 +1,7 @@
 @import url(index.css);
 
 .about {
-  margin: 110px auto 50px;
+  padding: 110px 0 55px;
 }
 .about__link {
   text-decoration: none;
@@ -22,19 +22,47 @@
   padding: 15px;
 }
 .about .content__card {
-  padding: 0 15px 15px;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "frontend"
+    "backend"
+    "databases";
+  margin: 0 15px 15px;
 }
 .about .content__card div {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.09);
-  /* box-shadow: -1px -1px 2px 1px rgb(255 255 255 / 25%); */
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.09);
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+.about .content__card div:nth-of-type(1) {
+  grid-area: databases;
+}
+.about .content__card div:nth-of-type(2) {
+  grid-area: backend;
+}
+.about .content__card div:nth-of-type(3) {
+  grid-area: frontend;
+}
+.about .content__card i {
+  font-size: 32px;
+}
+.about .content__card h4 {
+  font-size: 1.57em;
+  font-weight: 600;
+  margin: 15px 0;
 }
 .about .content__card li {
   list-style: none;
+  font-weight: lighter;
+  font-size: 1em;
+}
+.column-grid-frontend {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .about .content__description {
   background-color: rgba(255, 255, 255, 0.09);
@@ -66,7 +94,7 @@
 .about .content__description ul {
   padding-left: 30px;
   padding-right: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .about .content__description li {
   list-style: none;
@@ -98,7 +126,7 @@
 }
 @media screen and (min-width: 481px) {
   .about {
-    margin-bottom: 0;
+    padding-bottom: 0;
     min-height: calc(100vh - 110px);
     display: flex;
     align-items: center;
@@ -113,13 +141,19 @@
   .about .content__certificates a:nth-of-type(2) {
     margin-left: 7.5px;
   }
-  /* .about .content__card {
-    grid-template-columns: repeat(2, 1fr);
-  } */
+  .about .content__card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "frontend frontend"
+      "backend databases";
+  }
+  .column-grid-frontend {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 769px) {
   .about {
-    margin: 110px 0 0;
+    padding: 110px 0 0;
   }
   .about .content__title {
     font-size: 2.5em;
@@ -147,12 +181,24 @@
   .about .content__certificates a:nth-of-type(2) {
     margin-left: 0;
   }
-  .about .content__card {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .about .content__certificates img {
     max-height: 310px;
     height: 100%;
+  }
+  .about .content__card {
+    gap: 0;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: "databases backend frontend";
+  }
+  .about .content__card div:nth-of-type(1) {
+    margin-right: 15px;
+  }
+  .about .content__card div:nth-of-type(2) {
+    margin-right: 15px;
+  }
+  .column-grid-frontend {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1025px) {
@@ -183,5 +229,12 @@
   }
   .about .content__certificates img {
     max-height: 250px;
+  }
+  .about .content__card li {
+    font-size: 1.15em;
+  }
+  .column-grid-frontend {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
