@@ -59,30 +59,34 @@ const About = () => {
                 <CertificatesItem
                   urlLink="https://drive.google.com/drive/folders/15ez4kmCxYboSe4ShXfYMHrlv931E5jB3?usp=sharing"
                   classLink="link-style"
+                  classDiv="link-hover"
                   urlImg="https://i.ibb.co/nR42c3x/frontend-js.png"
                   altImg="Certificados Escuela JS Platzi"
-                  classImg=""
+                  classImg="certificates__img"
                 />
                 <CertificatesItem
                   urlLink="https://drive.google.com/drive/folders/17N4hg2ZpMWBJZmqo8saOxhVwrQwTMZ8x?usp=sharing"
                   classLink="link-style"
+                  classDiv="link-hover"
                   urlImg="https://i.ibb.co/t3VhLxz/certificado-curso-api-rest.png"
                   altImg="Certificados EdTeam"
-                  classImg=""
+                  classImg="certificates__img"
                 />
                 <CertificatesItem
                   urlLink="https://drive.google.com/drive/folders/15ez4kmCxYboSe4ShXfYMHrlv931E5jB3?usp=sharing"
                   classLink="link-style"
+                  classDiv="link-hover"
                   urlImg="https://i.ibb.co/6v6TWst/git.png"
                   altImg="Certificados Escuela JS Platzi"
-                  classImg="img-show"
+                  classImg="certificates__img img-show"
                 />
                 <CertificatesItem
                   urlLink="https://drive.google.com/drive/folders/1cT7GO1ug-Se0qLvLiKhjWb2ggtX7Eas9?usp=sharing"
                   classLink="link-style"
+                  classDiv="link-hover"
                   urlImg="https://i.ibb.co/fGDKG8Y/cibertec.png"
                   altImg="Certificados Cibertec"
-                  classImg="img-show"
+                  classImg="certificates__img img-show"
                 />
               </section>
             </div>
