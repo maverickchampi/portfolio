@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import CertificatesItem from "../components/atom/CertificatesItem";
+import RectangleItem from "../components/atom/RectangleItem";
 import CardItem from "../components/atom/CardItem";
 import { selectLink } from "../constant/Utils";
 import "../assets/styles/about.css";
@@ -32,7 +32,7 @@ const About = () => {
                       href="https://www.linkedin.com/in/maverickchampi/"
                       target="_blank"
                       rel="noreferrer"
-                      className="about__link"
+                      className="link__important"
                     >
                       Linkedin
                     </a>
@@ -41,7 +41,7 @@ const About = () => {
                       href="https://drive.google.com/drive/folders/17o659Dj1s1u_cjBiTj3kP4l2PZ45fj84?usp=sharing"
                       target="_blank"
                       rel="noreferrer"
-                      className="about__link"
+                      className="link__important"
                     >
                       certificados.
                     </a>
@@ -56,37 +56,37 @@ const About = () => {
                 </div>
               </section>
               <section className="content__certificates">
-                <CertificatesItem
+                <RectangleItem
                   urlLink="https://drive.google.com/drive/folders/15ez4kmCxYboSe4ShXfYMHrlv931E5jB3?usp=sharing"
                   classLink="link-style"
                   classDiv="link-hover"
                   urlImg="https://i.ibb.co/nR42c3x/frontend-js.png"
                   altImg="Certificados Escuela JS Platzi"
-                  classImg="certificates__img"
+                  classImg="link__img-item"
                 />
-                <CertificatesItem
+                <RectangleItem
                   urlLink="https://drive.google.com/drive/folders/17N4hg2ZpMWBJZmqo8saOxhVwrQwTMZ8x?usp=sharing"
                   classLink="link-style"
                   classDiv="link-hover"
                   urlImg="https://i.ibb.co/t3VhLxz/certificado-curso-api-rest.png"
                   altImg="Certificados EdTeam"
-                  classImg="certificates__img"
+                  classImg="link__img-item"
                 />
-                <CertificatesItem
+                <RectangleItem
                   urlLink="https://drive.google.com/drive/folders/15ez4kmCxYboSe4ShXfYMHrlv931E5jB3?usp=sharing"
                   classLink="link-style"
                   classDiv="link-hover"
                   urlImg="https://i.ibb.co/6v6TWst/git.png"
                   altImg="Certificados Escuela JS Platzi"
-                  classImg="certificates__img img-show"
+                  classImg="link__img-item img-show"
                 />
-                <CertificatesItem
+                <RectangleItem
                   urlLink="https://drive.google.com/drive/folders/1cT7GO1ug-Se0qLvLiKhjWb2ggtX7Eas9?usp=sharing"
                   classLink="link-style"
                   classDiv="link-hover"
                   urlImg="https://i.ibb.co/fGDKG8Y/cibertec.png"
                   altImg="Certificados Cibertec"
-                  classImg="certificates__img img-show"
+                  classImg="link__img-item img-show"
                 />
               </section>
             </div>

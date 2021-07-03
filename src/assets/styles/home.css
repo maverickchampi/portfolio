@@ -6,8 +6,9 @@
   height: 100vh;
 }
 .home__content {
-  margin: auto;
   color: var(--firstColor);
+  margin: auto;
+  padding: 15px;
 }
 .home .content__title {
   font-weight: 500;

@@ -1,0 +1,87 @@
+@import url(index.css);
+
+.projects {
+  padding: 60px 0 55px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+}
+.projects__content {
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+}
+.projects__content .content__title {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+.projects__content .content__title div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.projects__content .content__title h1 {
+  font-size: 1.7em;
+}
+.projects__content .content__title i {
+  font-size: 32px;
+  margin-left: 15px;
+}
+.projects__content .content__title p {
+  font-weight: lighter;
+  font-size: 1em;
+  text-align: center;
+}
+.projects .content__cards {
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+.projects .content__cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+@media screen and (min-width: 481px) {
+  .projects {
+    padding: 60px 0 0;
+  }
+  .projects__content .content__title {
+    padding: 20px;
+  }
+  .projects .content__cards {
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .projects__content {
+    padding: 15px 90px;
+  }
+  .projects .content__cards {
+    padding: 20px;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects__content {
+    padding: 15px;
+  }
+  .projects .content__cards {
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}

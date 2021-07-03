@@ -39,7 +39,48 @@ body {
   height: auto;
   text-decoration: none;
 }
-
+.link__important {
+  text-decoration: none;
+  color: var(--firstHover);
+  font-weight: 500;
+}
+.link-hover,
+.link-hover-2 {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-hover::after {
+  content: "";
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 0.15rem solid #fff;
+  outline-offset: -1.2rem;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+}
+.link-hover:hover:after {
+  transform: scale(1);
+}
+.link-hover-2 i {
+  position: absolute;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+  z-index: 997;
+}
+.link-hover-2:hover > i {
+  transform: scale(2);
+}
 @media screen and (min-width: 321px) {
   body {
     font-size: 14px;

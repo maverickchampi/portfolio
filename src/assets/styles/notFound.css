@@ -1,0 +1,26 @@
+@import url(index.css);
+
+.notFound {
+  height: 100vh;
+  width: 100vw;
+}
+.notFound .container {
+  height: calc(100vh - 60px);
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notFound h1 {
+  color: #fff;
+}
+.notFound img {
+  width: 65%;
+}
+
+@media screen and (min-width: 481px) {
+  .notFound img {
+    width: 33%;
+  }
+}

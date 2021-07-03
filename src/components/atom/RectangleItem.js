@@ -1,6 +1,6 @@
 import React from "react";
 
-const CertificatesItem = ({
+const RectangleItem = ({
   urlLink,
   classLink,
   classDiv,
@@ -19,4 +19,4 @@ const CertificatesItem = ({
   );
 };
 
-export default CertificatesItem;
+export default RectangleItem;
