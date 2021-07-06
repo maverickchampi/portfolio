@@ -34,7 +34,7 @@ const Projects = () => {
             </div>
             <div className="content__cards">
               <SquareItem
-                urlLink="/"
+                urlLink="https://maverick-central.herokuapp.com/"
                 classLink="link-style"
                 classDiv="link-hover-2"
                 classIcon="far fa-eye"
@@ -43,7 +43,7 @@ const Projects = () => {
                 classImg="link__img-item"
               />
               <SquareItem
-                urlLink="/"
+                urlLink="https://maverickchampi.herokuapp.com/"
                 classLink="link-style"
                 classDiv="link-hover-2"
                 classIcon="far fa-eye"
@@ -52,7 +52,7 @@ const Projects = () => {
                 classImg="link__img-item"
               />
               <SquareItem
-                urlLink="/"
+                urlLink="https://maverickchampi.github.io/moonConf/"
                 classLink="link-style"
                 classDiv="link-hover-2"
                 classIcon="far fa-eye"
@@ -61,7 +61,7 @@ const Projects = () => {
                 classImg="link__img-item"
               />
               <SquareItem
-                urlLink="/"
+                urlLink="https://maverick-portfolio.herokuapp.com/nexflix.html"
                 classLink="link-style"
                 classDiv="link-hover-2"
                 classIcon="far fa-eye"

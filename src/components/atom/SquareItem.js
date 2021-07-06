@@ -12,12 +12,14 @@ const SquareItem = ({
 }) => {
   return (
     <>
-      <Link to={urlLink} className={classLink}>
+      <a href={urlLink} target="_blank" rel="noreferrer" className={classLink}>
+        {/* <Link to={urlLink} className={classLink}> */}
         <div className={classDiv}>
           <i className={classIcon} />
           <img src={urlImg} alt={altImg} className={classImg} />
         </div>
-      </Link>
+        {/* </Link> */}
+      </a>
     </>
   );
 };
