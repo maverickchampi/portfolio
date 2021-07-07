@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { selectLink } from "../constant/Utils";
+import { linkAbout } from "../constant/Utils";
 import "../assets/styles/home.css";
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
               ,<br />
               Desarrollador Web<span className="pointer">.</span>
             </h1>
-            <Link to="/portfolio/about" className="link-style home__link">
+            <Link to={linkAbout} className="link-style home__link">
               Conóceme más
             </Link>
           </div>

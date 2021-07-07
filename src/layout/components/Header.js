@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MenuItem from "../../components/atom/MenuItem";
+import { linkHome, linkAbout, linkProjects } from "../../constant/Utils";
 import "../../assets/styles/header.css";
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
     <>
       <header className="header">
         <div className="container">
-          <Link to="/portfolio/" className="link-style header__link">
+          <Link to={linkHome} className="link-style header__link">
             <img
               src="https://i.ibb.co/Rh9Ywbm/logo.png"
               className="header__logo"
@@ -22,7 +23,7 @@ const Header = () => {
                 <li>
                   <MenuItem
                     id="home"
-                    to="/portfolio/"
+                    to={linkHome}
                     classLink="link-style menu__link"
                     classIcon="fas fa-home"
                     text="Inicio"
@@ -31,7 +32,7 @@ const Header = () => {
                 <li>
                   <MenuItem
                     id="about"
-                    to="/portfolio/about"
+                    to={linkAbout}
                     classLink="link-style menu__link"
                     classIcon="fas fa-address-card"
                     text="Sobre mi"
@@ -40,7 +41,7 @@ const Header = () => {
                 <li>
                   <MenuItem
                     id="projects"
-                    to="/portfolio/projects"
+                    to={linkProjects}
                     classLink="link-style menu__link"
                     classIcon="fas fa-folder-open"
                     text="Proyectos"

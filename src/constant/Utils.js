@@ -7,3 +7,7 @@ export const selectLink = (idLink) => {
     document.getElementById(link).classList.remove("link-active")
   );
 };
+
+export const linkHome = "/";
+export const linkAbout = "/about";
+export const linkProjects = "/projects";
