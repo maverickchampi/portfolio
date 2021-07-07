@@ -23,7 +23,7 @@ const Home = () => {
               ,<br />
               Desarrollador Web<span className="pointer">.</span>
             </h1>
-            <Link to="/about" className="link-style home__link">
+            <Link to="/portfolio/about" className="link-style home__link">
               Conóceme más
             </Link>
           </div>

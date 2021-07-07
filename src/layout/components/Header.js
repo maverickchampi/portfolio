@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <header className="header">
         <div className="container">
-          <Link to="/" className="link-style header__link">
+          <Link to="/portfolio" className="link-style header__link">
             <img
               src="https://i.ibb.co/Rh9Ywbm/logo.png"
               className="header__logo"
@@ -22,7 +22,7 @@ const Header = () => {
                 <li>
                   <MenuItem
                     id="home"
-                    to="/"
+                    to="/portfolio"
                     classLink="link-style menu__link"
                     classIcon="fas fa-home"
                     text="Inicio"
@@ -31,7 +31,7 @@ const Header = () => {
                 <li>
                   <MenuItem
                     id="about"
-                    to="/about"
+                    to="/portfolio/about"
                     classLink="link-style menu__link"
                     classIcon="fas fa-address-card"
                     text="Sobre mi"
@@ -40,7 +40,7 @@ const Header = () => {
                 <li>
                   <MenuItem
                     id="projects"
-                    to="/projects"
+                    to="/portfolio/projects"
                     classLink="link-style menu__link"
                     classIcon="fas fa-folder-open"
                     text="Proyectos"
